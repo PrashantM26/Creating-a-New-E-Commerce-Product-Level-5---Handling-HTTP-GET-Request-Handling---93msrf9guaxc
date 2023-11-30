@@ -41,8 +41,8 @@ app.post('/api/v1/products', (req,res) => {
         data: {
             newProduct,
         },
-    });
-)}
+    })
+})
 
 
 // GET endpoint for sending the details of users
