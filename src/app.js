@@ -15,12 +15,12 @@ app.use(express.json())
 app.post('/api/v1/products', (req,res) => {
     const { name, price, quantity } = req.body;
     
-    if (!name || !price || !quantity) {
+    /*if (!name || !price || !quantity) {
         return res.status(400).json({
             status: 'failed',
             message: 'Invalid product data. Please provide name, price, and quantity.',
         });
-    }
+    }*/
     
     const newProductId = products.length > 0 ? products[products.length - 1].id + 1 : 1;
     
